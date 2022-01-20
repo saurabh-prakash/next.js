@@ -1,9 +1,15 @@
 ---
 framework: jest
 postMerge:
+  env:
+    TRACE_PLAYWRIGHT: true
+    HEADLESS: true
   pattern:
     - 'test/development/**/*.test.{js,ts,tsx}'
 preMerge:
+  env:
+    TRACE_PLAYWRIGHT: true
+    HEADLESS: true
   pattern:
     - 'test/development/**/*.test.{js,ts,tsx}'
 preRun:
