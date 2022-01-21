@@ -5,13 +5,13 @@ postMerge:
     TRACE_PLAYWRIGHT: true
     HEADLESS: true
   pattern:
-    - 'test/production/**/*.test.{js,ts,tsx}'
+    - 'test/e2e/**/*.test.{js,ts,tsx}'
 preMerge:
   env:
     TRACE_PLAYWRIGHT: true
     HEADLESS: true
   pattern:
-    - 'test/production/**/*.test.{js,ts,tsx}'
+    - 'test/e2e/**/*.test.{js,ts,tsx}'
 preRun:
   command:
     - yarn
